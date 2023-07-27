@@ -1,0 +1,140 @@
+.common-width{
+  width: 1000px;
+  margin: auto !important;
+}
+
+body{
+  /* margin: 0; */
+  
+    font-family: 'Poppins';
+}
+
+.Slider-Container{
+  display: flex;
+  text-align: center;
+
+}
+
+
+
+.Slider-child{
+  display: flex;
+  gap:2rem;
+  display: none;
+}
+
+.trans-img{
+  /* width:90%; */
+  width: 300px;
+}
+
+.Trans-btn{
+  border: none;
+    width: 280px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #1A5D1A;
+    color: white;
+}
+
+.Image-Card .Transport{
+  padding-top: 40px;
+}
+
+.arrow-left{
+  position: absolute;
+    left: 151px;
+    top: 283px;
+    background: green;
+    width: 38px;
+    border-radius: 50px;
+}
+.arrow-right{
+  position: absolute;
+    right: 151px;
+    top: 283px;
+    background: green;
+    width: 38px;
+    border-radius: 50px;
+}
+
+.a {
+  color: unset !important;
+  text-decoration: unset;
+}
+
+.prev , .next {
+  
+  cursor: pointer;
+    color: white;
+    text-decoration: auto;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+}
+
+/* .Card-Image .card-img{
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+
+.choose-img{
+  width: 730px;
+    margin-left: -133px;
+}
+
+.Choose-Content{
+  text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.Choose-Accor-truckimg{
+  padding-top: 50px;
+}
+
+.Accor-container{
+  padding-top: 60px;
+}
+
+.Accor-head{
+  margin: 6px;
+    font-weight: 600;
+    color: darkgreen;
+}
+
+.accordion-body{
+  background-color: #7D7463;
+  color: white;
+}
+
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.accordion {
+    --bs-accordion-active-color:unset; 
+   --bs-accordion-active-bg: unset;
+}
+
+.accordion-button::after{
+  background-image: none;
+  content:"\f0d7";
+  font-family: fontawesome;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: none;
+}
+
+
