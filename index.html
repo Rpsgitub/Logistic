@@ -1,197 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/61fe4c242a.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+<style>
+    .sample-slider{
+        width:70%;
+    }
+    .swiper-wrapper{
+        gap: 10px;
+    }
+    .sample-slider img{
+        width: 100%;
+    }
+</style>
 
-    <title>Document</title>
-</head>
-<body>
-
- <section class="mt-5">
- 
-  <div class="Slider-Container row common-width">
-
-    <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
-    <div class="arrow-left">
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
+<div class="swiper sample-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Images/plane.jpg"></div>
+        <div class="swiper-slide"><img src="Images/ship.jpg"></div>
+        <div class="swiper-slide"><img src="Images/truck.jpg"></div>
+        <div class="swiper-slide"><img src="Images/plane.jpg"></div>
+        <div class="swiper-slide"><img src="Images/ship.jpg"></div>
+        <div class="swiper-slide"><img src="Images/truck.jpg"></div>
     </div>
-    <div class="Slider-child col-md-12 " >
-     
-      <div class="Image-Card ">
-        <img src="Images/plane.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">Air Transportation</button>
-        </div>
-       
-      </div>
+</div>
 
-      <div class="Image-Card ">
-        <img src="Images/ship.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">Air Transportation</button>
-        </div>
-       
-      </div>
-
-      <div class="Image-Card ">
-        <img src="Images/truck.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">Air Transportation</button>
-        </div>
-       
-      </div>
-
-
-      
-
-
-
-    </div>
-
-    <div class="Slider-child col-md-12 ">
-     
-      <div class="Image-Card ">
-        <img src="Images/ship.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn"> Transportation</button>
-        </div>
-       
-      </div>
-
-      <div class="Image-Card ">
-        <img src="Images/plane.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">PamddTransportation</button>
-        </div>
-       
-      </div>
-
-      <div class="Image-Card ">
-        <img src="Images/truck.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">Air Transportation</button>
-        </div>
-       
-      </div>
-
-
-      
-
-
-
-    </div>
-
-  
-
-    
-
-   
-
-
-    <!-- <div class="Slider-child col-md-4">
-      <div class="Image-Card">
-        <img src="Images/truck.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">Ground Transportation</button>
-        </div>
-      </div>
-    </div> -->
-
-
-    <!-- <div class="Slider-child col-md-4">
-      
-      <div class="Image-Card">
-        <img src="Images/ship.jpg" alt="" class="trans-img">
-        <div class="Transport">
-          <button class="Trans-btn">Marine Transportation</button>
-        </div>
-      </div>
-     
-    </div> -->
-
-
-    
-    <div class="arrow-right">
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-
-
-
-  </div>
-</section> 
-  
-
-<section class="mt-5">
-  <div class="Choose-Content">
-    <p>Why Choose Us ?</p>
-  </div>
-
-  <div class="row common-width Choose-Accor-truckimg">
-    <div class="accordion col-md-5 accordion-flush Accor-container" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-           <h3>100%</h3>  <span class="Accor-head"> Satisfied Customers</span>
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-7">
-      <img src="Images/truck design 2.png" alt="" class="choose-img">
-    </div>
-  </div>
-
-  
-
-  
-</section>
-
-
-
-
-
-
- 
-  <script src="index.js"></script>
-</body>
-</html>
+<script>
+   const swiper = new Swiper('.sample-slider', {
+    loop: true,
+    autoplay: {
+        delay: 0,
+    },
+    speed: 3000,          //add
+    slidesPerView: 3,     //add
+})
+</script>
