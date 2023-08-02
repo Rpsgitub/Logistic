@@ -1,32 +1,35 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+
+
+// setInterval(function() {prev()}, 6000);
+// setInterval(function() {next()}, 3000);
+
+
+
+var carousel = document.querySelector('.carousel')
+var firstImageCard = document.querySelectorAll('.Image-Card')[0]
+var ImageCard = document.querySelectorAll('.Image-Card')
+const prev = () => carousel.scrollLeft -= firstImageCard.clientWidth + 28
+
+const firstItem = carousel.children[0];
+const clonedFirstItem = firstItem.cloneNode(true);
+console.log(clonedFirstItem);
+carousel.appendChild(clonedFirstItem);
+
+console.log(ImageCard.length)
+const next = () => {
+   
+   
+    while(ImageCard.length <= 4 ){
+        carousel.scrollLeft += firstImageCard.clientWidth + 28 
+
+    }
+
+    const firstItem = carouselSlide.children[0];
+    const clonedFirstItem = firstItem.cloneNode(true);
+    carousel.appendChild(clonedFirstItem);
+    carousel.removeChild(firstItem);
+    
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-let slides = document.getElementsByClassName('Slider-child');
-  console.log(slides)
-function showSlides(n) {
-  console.log('showslide')
-  let i;
-
   
-  if(n > slides.length){
 
-    slideIndex = 1
-  }
-
-  if(n < 1){
-    slideIndex = slides.length
-  }
-
-  for (i=0 ; i< slides.length ; i++){
-    slides[i].style.display = 'block';
-  }
-
-  slides[slideIndex-1].style.display = 'flex';
-}
